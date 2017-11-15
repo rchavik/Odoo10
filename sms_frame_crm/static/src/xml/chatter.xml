@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates>
+    <!--
+        Chatter main div
+    -->
+
+<!--
+    <t t-name="mail.Chatter">
+        <div class="o_chatter">
+            <div class="o_chatter_topbar">
+                <button type="button" class="btn btn-sm btn-primary o_chatter_button_new_message" title="Send a message">
+                    New message
+                </button>
+                <button type="button" class="btn btn-sm btn-primary o_chatter_button_new_sms" title="Send an SMS">
+                    New SMS
+                </button>
+                <button t-if="widget.options.display_log_button" class="btn btn-sm btn-link o_chatter_button_log_note" title="Log a note. Followers will not be notified.">
+                    Log an internal note
+                </button>
+            </div>
+        </div>
+    </t>
+-->
+
+    <t t-extend="mail.Chatter">
+        <t t-jquery=".o_chatter_button_new_message" t-operation="after">
+            <button type="button" class="btn btn-sm btn-primary o_chatter_button_new_sms" title="Send an SMS">
+                New SMS
+            </button>
+        </t>
+    </t>
+
+</templates>

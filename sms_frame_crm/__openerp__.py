@@ -9,11 +9,15 @@
     'license':'LGPL-3',
     'data': [
         'views/crm_lead_views.xml',
+        'views/mail_templates.xml',
     ],
     'demo': [],
     'depends': ['sms_frame', 'crm'],
     'images':[
         'static/description/1.jpg',
+    ],
+    'qweb': [
+        'static/src/xml/chatter.xml',
     ],
     'installable': True,
 }
