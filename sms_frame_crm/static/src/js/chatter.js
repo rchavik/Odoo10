@@ -23,7 +23,7 @@ odoo.define('override_chatter.override_chatter', function (require) {
                     'default_field_id': this.name,
                     'default_to_number': values['mobile'],
                     'default_record_id': values['id'],
-                    'default_model_id': this.getParent().model
+                    'default_model': this.getParent().model
                 },
             });
 
